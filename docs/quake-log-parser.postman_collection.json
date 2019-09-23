@@ -1,0 +1,85 @@
+{
+	"variables": [],
+	"info": {
+		"name": "quake-log-parser",
+		"_postman_id": "cf29034d-c9db-eeb7-dec8-52479fa9d007",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Parser do arquivo game.log",
+			"request": {
+				"url": "http://localhost:8080/parser/game-log",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "logs",
+							"value": "",
+							"description": "",
+							"type": "file"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "file",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Busca o resultado do Game por ID",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/game/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"game",
+						":id"
+					],
+					"query": [],
+					"variable": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "logs",
+							"value": "",
+							"description": "",
+							"type": "file"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "file",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
