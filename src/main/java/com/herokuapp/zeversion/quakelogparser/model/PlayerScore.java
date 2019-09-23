@@ -47,4 +47,9 @@ public class PlayerScore {
     public void setKills(Integer kills) {
         this.kills = kills;
     }
+
+    @Override
+    public String toString() {
+        return kills + "\t" + name;
+    }
 }
